@@ -24,7 +24,7 @@ def start():
 
 #Обработка форм
 @app.route('/reghandler', methods=['POST'])
-def regform_handler():
+def regformhandler():
 	if request.method == 'POST':
 
 		email = request.form['email']
@@ -48,6 +48,36 @@ def regform_handler():
 
 		cur.close()
 		con.close()
+
+@app.route('/authandler', methods=['POST'])
+def authhandler():
+	if request.method == 'POST':
+
+		login = request.form['login']
+		password = request.form['password']
+
+		con = sqlt.connect('./DataBase/Users.db')
+		cur = con.cursor()
+
+		all_records = cur.execute("SELECT * FROM users").fetchall()
+
+		#Совпадение в БД обнаружено
+		match = False
+
+		for i in range(0, len(all_records)):
+			if (all_records[i][2] == login) and (all_records[i][3] == password):
+				match = True
+
+		if match:
+			return 'Перенаправить на страницу опроса'
+		else:
+			return 'Неправильные данные'
+
+		con.commit()
+		cur.close()
+		con.close()
+
+	return f'{login} {password}'
 
 
 if __name__ == '__main__':
