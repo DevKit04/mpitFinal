@@ -15,11 +15,11 @@
 
 		<div class="registration-title">РЕГИСТРАЦИЯ</div>
 
-		<form action="#" class="registration">
-			<input type="text" placeholder="ЭЛ.ПОЧТА" class="email">
-			<input type="text" placeholder="ЛОГИН" class="login">
-			<input type="password" placeholder="ПАРОЛЬ" class="password">
-			<input type="password" placeholder="ПОВТОРИТЕ ПАРОЛЬ" class="repassword">
+		<form action="/reghandler" class="registration" method="POST">
+			<input type="text" placeholder="ЭЛ.ПОЧТА" class="email" name="email">
+			<input type="text" placeholder="ЛОГИН" class="login" name="login">
+			<input type="password" placeholder="ПАРОЛЬ" class="password" name="password">
+			<input type="password" placeholder="ПОВТОРИТЕ ПАРОЛЬ" class="repassword" name="repassword">
 			<input type="button" class="submit-button" value="ВОЙТИ">
 		</form>
 
