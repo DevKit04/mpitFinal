@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='/styles/registration.css')}}">
+	<title>ВХОД</title>
+</head>
+<body>
+	<div class="container">
+
+		<img src="{{url_for('static', filename='/styles/logo.png')}}" class="logo">
+
+		<span class="welcome">Добро пожаловать</span>
+
+		<div class="registration-title">ВХОД</div>
+
+		<form action="#" class="registration">
+			<input type="text" placeholder="ЛОГИН" class="login">
+			<input type="password" placeholder="ПАРОЛЬ" class="password">
+			<input type="button" class="submit-button" value="ВОЙТИ">
+		</form>
+
+		<a href="/registration" class="auth">Ещё не зарегистрирован</a>
+
+		<script type="text/javascript" src="{{url_for('static' ,filename='/scripts/registration.js')}}"></script>
+
+	</div>
+</body>
+</html>

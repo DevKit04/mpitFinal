@@ -1,0 +1,22 @@
+*{box-sizing:border-box;}
+body{
+	margin:0px;
+	font-family: 'Roboto', sans-serif;
+}
+.container{
+	width:100vw;
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+}
+.vegs-grid{
+	display:grid;
+	grid-template-columns:repeat(5, 1fr);
+	grid-gap:10px;
+}
+.veg-pic{
+	width:125px;
+	height:150px;
+}

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{box-sizing:border-box;}
+body{
+	margin:0px;
+	font-family: 'Roboto', sans-serif;
+}
+.container{
+	width:100vw;
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+}
+.logo{
+	width:200px;
+	margin-bottom:15px;
+}
+.welcome{
+	margin-bottom:30px;
+	font-size:42px;
+}
+.registration-title{
+	background:#16A200;
+	color:#ffffff;
+	width:393px;
+	height:60px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:18px;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+}
+.registration{
+	display:flex;
+	padding:45px;
+	flex-direction:column;
+	border:1px solid #16A200;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+}
+.email, .login, .password, .repassword{
+	width:300px;
+	height:50px;
+	text-align:center;
+	margin-bottom:10px;
+	border:1px solid #666666;
+	border-radius:10px;
+}
+.submit-button{
+	background:#16A200;
+	color:#ffffff;
+	width:300px;
+	height:50px;
+	border:none;
+	border-radius:10px;
+}
+.auth{
+	margin-top:10px;
+}
