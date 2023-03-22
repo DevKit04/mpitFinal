@@ -11,8 +11,6 @@ function validateForm(){
 
 	registration.submit();
 
-	alert(123);
-
 }
 
 submit_button.onclick = validateForm;
